@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+
+.main-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.logo-image {
+  height: 4.4rem;
+  width: auto;
+}
+
+.form {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0, 0.8);
+  padding-block: 16rem;
+  padding-inline: 8rem;
+}
+
+.first-part-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 2rem;
+  top: -8rem;
+}
+
+.first-part-form h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.first-part-form .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.first-part-form .inputs input {
+  height: 5rem;
+  width: 30rem;
+  background-color: #333;
+  color: #8c8c8c;
+  border: none;
+  font-size: 1.6rem;
+  outline: none;
+  border-radius: 0.4rem;
+  padding-left: 1rem;
+}
+
+.first-part-form .inputs input::placeholder {
+  position: relative;
+  left: 1rem;
+}
+
+.form-btn {
+  height: 5rem;
+  color: white;
+  background-color: rgb(170, 0, 0);
+  font-size: 1.8rem;
+  margin-top: 1.6rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.form-btn:hover,
+.form-btn:active {
+  background-color: #d40000;
+}
+
+.second-part-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -6rem;
+}
+
+.second-part-form a:any-link,
+.second-part-form a:visited {
+  color: #8c8c8c;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.second-part-form a:hover,
+.second-part-form a:active {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.check-box-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  color: #8c8c8c;
+  gap: 0.6rem;
+}
+.check-box-box label {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.third-part-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  gap: 0.4rem;
+}
+
+.third-part-form p {
+  color: #8c8c8c;
+}
+
+.third-part-form a:any-link,
+.third-part-form a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.third-part-form a:hover,
+.third-part-form a:active {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.fourth-part-form {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #8c8c8c;
+}
+
+.fourth-part-form a:any-link,
+.fourth-part-form a:visited {
+  text-decoration: none;
+}
+
+.fourth-part-form a:hover,
+.first-part-form a:active {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
