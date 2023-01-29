@@ -238,7 +238,7 @@ form > .btn:hover {
   margin-top: 2.6rem;
 }
 /*  */
-#a{
+#a {
   color: white;
   text-decoration: none;
 }
@@ -271,8 +271,7 @@ form > .btn:hover {
 /* Footer */
 .footer {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  align-items: center;
+  grid-template-rows: repeat(3, 1fr);
   justify-content: center;
 }
 
@@ -280,6 +279,7 @@ form > .btn:hover {
   text-decoration: none;
   color: #737373;
   font-size: 1.6rem;
+  align-self: center;
 }
 
 .footer-lists {
@@ -324,21 +324,130 @@ form > .btn:hover {
   text-underline-offset: 0.4rem;
 }
 
-
-.temporary{
+.temporary {
   font-size: 2.6rem !important;
   color: yellow;
-  animation: temp .05s;
   position: absolute;
   bottom: -6rem;
   left: 0;
 }
 
-@keyframes temp{
-  0%{
-    scale: 0;
+.form {
+  padding-bottom: 8.2rem;
+}
+
+/* Media queries */
+/* 1200px */
+@media (max-width: 75em) {
+  .select-list {
+    display: none;
   }
-  100%{
-    scale: 1;
+  .tv-section {
+    flex-direction: column;
+  }
+  .footer-lists {
+    margin: 0 auto;
+  }
+  .form {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+}
+/*  820px*/
+@media (max-width: 51.25em) {
+  .questions-section h1 {
+    font-size: 3.4rem;
+  }
+  .main-header h1 {
+    font-size: 6rem;
+  }
+
+  .container p {
+    display: none;
+  }
+
+  .get-started {
+    display: none;
+  }
+  .footer-lists {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8rem;
+    padding-bottom: 4rem;
+  }
+  .footer-lists ul li a {
+    font-size: 1.8rem;
+  }
+  .footer-header {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+  }
+}
+
+/* 940px */
+@media (max-width: 58.75em) {
+  .hidden-text-box p {
+    font-size: 2rem;
+  }
+}
+
+/* 720px */
+@media (max-width: 45em) {
+  .tv-section {
+    gap: 6rem;
+  }
+  .text-section h1 {
+    font-size: 3.8rem;
+  }
+  .tv-photo-section img {
+    width: 40rem;
+  }
+
+  .text-box h2 {
+    font-size: 2rem;
+  }
+}
+/* 480px */
+@media (max-width: 30em) {
+  .footer-lists {
+    grid-template-columns: 1fr;
+  }
+  .text-section h1 {
+    font-size: 3rem;
+  }
+  .text-section p {
+    font-size: 2rem;
+  }
+  .tv-photo-section img {
+    width: 30rem;
+    height: auto;
+  }
+  .main-header h1 {
+    font-size: 4.6rem;
+  }
+  .questions-section h1 {
+    font-size: 2.8rem;
+  }
+  .tv-section {
+    padding-inline: 2rem;
+  }
+  .tv-section p {
+    font-size: 1.8rem;
+  }
+  .main-header h3 {
+    font-size: 2.4rem;
+  }
+  .questions-section h1 {
+    padding-inline: 1rem;
+  }
+  .text-box h2 {
+    font-size: 1.8rem;
+  }
+  .hidden-text-box p {
+    font-size: 1.6rem;
+    line-height: 1.6;
   }
 }
